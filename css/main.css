@@ -1,0 +1,417 @@
+<style>
+    html {
+      height: 100%;
+    }
+
+    body {
+      background: #E2E4E7;
+      padding: 0;
+      text-align: center;
+      font-family: 'Lato', sans-serif;
+      font-size: 14pt;
+      position: relative;
+      margin: 0;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+      min-width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      font-style: italic;
+    }
+
+    h1, h2 {
+      width: 100%;
+      float: left;
+    }
+
+    h1 {
+      margin-top: 100px;
+      color: #000;
+      margin-bottom: 5px;
+      font-size: 70px;
+      letter-spacing: -4px;
+      font-weight: 100;
+    }
+
+    h2 {
+      color: #6D461D;
+      font-weight: 100;
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1em;
+    }
+
+    .wrapper {
+      height: 100% !important;
+      height: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .scroll {
+      position: fixed;
+      top: 90%;
+      left: 94%;
+      -webkit-transform: translateX(-70%) translateY(-90%);
+      -moz-transform: translateX(-70%) translateY(-90%);
+      transform: translateX(-70%) translateY(-90%);
+      letter-spacing: 1px;
+      font-weight: 700;
+      font-size: 2em;
+      line-height: 2;
+      width: 3em;
+      text-align: center;
+      height: 2em;
+      color: #e74c3c;
+      background: #fff;
+      font-style: normal;
+      -moz-border-radius: 80px;
+      -webkit-border-radius: 80px;
+      border-radius: 80px;
+      border: 2px solid black;
+    }
+
+    .centerAlign{
+    position: relative;
+    left:10%;
+    }
+
+    .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .main h1 {
+      padding:150px 50px;
+      float: left;
+      width: 100%;
+      font-size: 45px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      font-weight: 100;
+      color: white;
+      margin: 0;
+    }
+
+    .clear {
+      width: auto;
+    }
+
+    header {
+      position: relative;
+      z-index: 10;
+    }
+    .main section .page_container {
+      position: relative;
+      top: -10%;
+      margin: 0 auto 0;
+      max-width: 1250px;
+      z-index: 3;
+    }
+    .main section  {
+      overflow: hidden;
+    }
+
+    .main section > img {
+      position: absolute;
+      max-width: 100%;
+      z-index: 1;
+    }
+
+    /******* Landing Section *******/
+    #headerImg{
+      position:relative;
+      top: 30px;
+    }
+
+    #comingSoon{
+      position:absolute;
+      top: -30%;
+      left: 25%;
+    }
+
+    .csButtons{
+      position:relative;
+      top: 40%;
+    }
+
+    .main section.page1 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 70px;
+      color: white;
+    }
+
+    .main section.page1 h2 {
+      color: rgba(0,0,0,0.85);
+      text-align: center;
+      width: 435px;
+      line-height: 160%;
+    }
+
+    /******* Section 2 ********/
+
+    .main section.page2 .page_container
+   {
+      position: relative;
+      top: 2%;
+      margin: 10px auto 0;
+      max-width: 100%;
+      min-height: 30%;
+      z-index: 3;
+    }
+    .main section.page2 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0px;
+      font-size: 50px;
+      letter-spacing: -1px;
+    }
+    .main section.page2 h2 {
+      text-align: center;
+      line-height: 160%;
+      font-weight: 100;
+      font-size:
+    }
+
+    .main section.page2 a{
+      color:#fff;
+    }
+
+    .main section.page2 .portfolioContainer img.icon{
+      width:100%;
+    }
+
+    .main section.page2 .portfolioContainer img.skillIcon{
+      width: 20%;
+    }
+
+    /*.main section.page2 .portfolioContainer img{
+      -webkit-filter: saturate(40%);
+    }
+
+    .main section.page2 .portfolioContainer img:hover{
+      -webkit-filter: saturate(100%);
+    }*/
+
+    .main section.page2 .portfolioContainer{
+      background-color: rgba(207,109,33,0.9);
+      -webkit-column-count: 2; /* Chrome, Safari, Opera */
+      -moz-column-count: 2; /* Firefox */
+      column-count: 2;
+      -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+      -moz-column-gap: 0px; /* Firefox */
+      column-gap: 0px;
+
+    }
+
+    .main section.page2 portfolioContainer, .main section.page4 .formBackground, .main section.page3 .formBackground{
+      border-radius:5px;
+      -moz-border-radius:5px;
+      -webkit-border-radius:5px;
+    }
+
+    #snSlides img{width:100%;}
+
+    #pscSlides img{width:100%;}
+
+    .contenthover { padding:20px 20px 10px 20px; }
+    .contenthover, .contenthover h3, contenthover a { color:#fff; }
+    .contenthover h3, .contenthover p { margin:0 0 10px 0; line-height:1.4em; padding:0; }
+    .contenthover a.mybutton { display:block; float:left; padding:5px 10px; background:#3c9632; color:#fff; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+    .contenthover a.mybutton:hover { background:#34742d }
+
+    #portText{
+      position:relative;
+      max-height: 40%;
+      width: 30%;
+    }
+
+    .clear{
+      clear: both;
+     }
+
+     /******** Section 3 **********/
+    .main section.page3 .page_container {
+      position: relative;
+      top: .5%;
+      margin: 10px auto 0;
+      max-width: 100%;
+      min-height: 30%;
+      z-index: 3;
+    }
+
+  .main section.page3 .formBackground{
+    left:30%;
+  }
+    .main section.page3 h2 {
+      color: rgba(0,0,0,0.85);
+      text-align: left;
+      line-height: 160%;
+      font-weight: 100;
+      font-size: 21px;
+    }
+
+    .main section.page3 p{
+      color:white;
+      /*left:5%;
+      text-align: left;
+      font-size: 16pt;
+      line-height: 110%;
+      position:relative;
+      top:60%;
+      width:85%;*/
+      position: relative;
+      left: 10%;
+      padding: 14px 14px 54px 14px;
+      border-radius: 40px;
+      margin-left: 30px;
+    }
+
+    #aboutMeText{
+      position:relative;
+      left: 27%;
+      top:10%;
+      z-index:2;
+      width: 50%;
+    }
+
+    #headshot{
+      float:left;
+      padding: 3px;
+      border: 2px solid #fff;
+      border-radius: 360%;
+    }
+
+
+    .main section.page3 .formBackground p{
+      width: 60%;
+      text-align: left;
+
+    }
+
+    #aboutMeCaption{
+      position: absolute;
+      left:19%;
+      top: -20%;
+    }
+
+    /********* Section 4 **********/
+    .main section.page4 .page_container {
+      /*overflow: hidden;*/
+      max-width: 100%;
+      position: relative;
+      top: 0%;
+      max-height: 100%;
+      /*right: -120px;*/
+    }
+
+     #footer{
+      position: relative;
+      top: 45%;
+      padding-top: 7px;
+      margin: 100 auto 0;
+      max-width: 100%;
+      height: 78px;
+      background-color: rgb(207,109,33);
+    }
+
+    .main section.page4 h1 {
+      text-align: left;
+      padding: 0;
+      margin-bottom: 0;
+      font-size: 70px;
+      letter-spacing: -1px;
+      color: black;
+    }
+    .main section.page4 h2 {
+      color: rgba(0,0,0,0.85);
+      text-align: left;
+      line-height: 160%;
+      font-weight: 100;
+      font-size: 21px;
+    }
+
+    .main section.page4 .page_container img{
+      position: relative;
+      right:25%;
+      top:30%;
+    }
+
+    #contactInfo{
+      position:absolute;
+      left: 20px;
+      top: 30%;
+      color: #ffffff;
+      text-align: left;
+    }
+
+    form {
+      width:459px;
+      margin:0px auto;
+    }
+
+    label {
+      display:block;
+      margin-top:20px;
+      letter-spacing:2px;
+    }
+
+    input, textarea {
+      width:439px;
+      height:27px;
+      background:#efefef;
+      border-radius:5px;
+      -moz-border-radius:5px;
+      -webkit-border-radius:5px;
+      border:1px solid #dedede;
+      padding:10px;
+      margin-top:3px;
+      font-size:0.9em;
+      color:#3a3a3a;
+    }
+
+    input:focus, textarea:focus {
+      border:1px solid #97d6eb;
+    }
+
+    input:invalid {
+      background:hsl(180, 50%, 90%);
+      border:1px solid #999;
+    }
+
+    textarea {
+      height:113px;
+      font-family:Arial, Helvetica, sans-serif;
+      background:url(images/textarea-bg.jpg) right no-repeat #efefef;
+    }
+
+    #submit {
+      background-color: rgb(57, 142, 119);
+      width:127px;
+      height:38px;
+      border:none;
+      margin-top:20px;
+      color: #ffffff;
+    }
+
+    #submit:hover {
+      opacity:0.9;
+    }
+
+    .main section.page4 .formBackground, .main section.page3 .formBackground{
+      background-color: rgba(138, 222, 188, 0.9);
+      padding: 44px 4px 44px 64px;
+    }
+
+
+    @media only screen and (max-width: 800px){
+      body{font-size: 80%;}
+      .formBackground p{font-size: 80%;}
+    }

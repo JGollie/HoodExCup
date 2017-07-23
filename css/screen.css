@@ -1,0 +1,99 @@
+
+
+img { 
+	border:0;
+} 
+
+a img { 
+	border:0;
+} 
+
+a:hover, a:active {
+	text-decoration: none;
+}
+
+.clear { 
+	display: inline-block; 
+}
+
+html[xmlns] .clear { 
+	display: block;
+}
+
+* html .clear { 
+	height: 1%;
+}
+
+.leftAlig { 
+	float:left; 
+}
+
+.rightAlig { 
+	float:right; 
+}
+
+.main section.page2 .wrapper { 
+	width:100%; 
+	margin:0 auto; 
+	padding-top: 50px;
+}
+
+#metaContainer {
+	position: relative; 
+	top:-150px;
+}
+
+/* moved sn2 slides to the left */
+#sn2 #metaContainer{
+	/*left:-150px;
+	top:-200px;*/
+}
+
+#psc #metaContainer{
+	left: 0px;
+}
+
+
+/* Pagination for each slider*/
+#pager, #pager2, #pager3  {text-align: center; margin: -59px auto 0px; z-index: 100; width: 50%; position: relative; left: 470px;}
+
+#pager {
+	top: 330px;
+}
+#pager2 {
+	top: 280px;
+}
+
+#pager3 {
+	top: 235px;
+}
+
+#pager a, #pager2 a, #pager3  a {display: block;text-indent: -5000px;width: 10px;height: 10px;background-image:url(../img/pager-sprite.png);background-repeat: no-repeat; float: left; margin-right: 5px;}
+#pager a, #pager2 a, #pager3  a {background-position: 0 0;}
+#pager a:hover, #pager2 a:hover, #pager3  a:hover {background-position: 0 -11px;}
+#pager a:active, #pager2 a:active, #pager3  a:active {background-position: 0 -11px;}
+#pager a.activeSlide, #pager2 a.activeSlide, #pager3  a.activeSlide {background-position: 0 -22px;}
+#pager a.activeSlide:hover, #pager2 a.activeSlide:hover, #pager3 a.activeSlide:hover {background-position: 0 -22px;}
+#pager a.activeSlide:active, #pager2 a.activeSlide:active, #pager3  a.activeSlide:active {background-position: 0 -22px;}
+
+/* The Slider Container */
+#slideContainer { 
+	margin: 0 auto; 
+	width: 830px; 
+	height: 350px;
+	padding: 20px 81px; 
+	z-index: 1;
+}
+
+@media only screen and (max-width: 400px){
+	#slideContainer { 
+	
+		height: 750px;
+	}
+}
+
+
+
+
+
+
