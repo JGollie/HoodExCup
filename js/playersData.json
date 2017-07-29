@@ -1,0 +1,24 @@
+{
+	"players":[
+		{
+			"name": Orlando Morriesette,
+			"rank": 1,
+			"totalSkins": 27
+		},
+		{
+			"name": John Johnson,
+			"rank":4,
+			"totalSkins": 7
+		},
+		{
+			"name": Orlando Morriesette,
+			"rank": 2,
+			"totalSkins": 27
+		},
+		{
+			"name": Orlando Morriesette,
+			"rank": 3,
+			"totalSkins": 27
+		}
+	]
+}

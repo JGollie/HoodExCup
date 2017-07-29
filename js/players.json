@@ -1,0 +1,24 @@
+{
+	"players":[
+		{
+			"name": "Orlando Morriesette",
+			"rank": 1,
+			"totalSkins": 27
+		},
+		{
+			"name": "Joe Johnson",
+			"rank":4,
+			"totalSkins": 7
+		},
+		{
+			"name": "Steve Irving",
+			"rank": 2,
+			"totalSkins": 27
+		},
+		{
+			"name": "Larry Smart",
+			"rank": 3,
+			"totalSkins": 27
+		}
+	]
+}

@@ -2,7 +2,7 @@
 <html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
-  <title>A. Morriesette | UI Dev & Designer</title>
+  <title>HoodExCup</title>
   <meta name="title" content="HoodExCup" />
   <meta name="description" content="" />
   <meta name="author" content="OrlandoAngelica Morriesette">
@@ -24,17 +24,21 @@
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" /><!-- Portfolio Overlays -->
   <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link src="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="css/reset.css">
+
 
   <!-- ------------------------------- JS Files ----------------------------------- -->
 
-  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
   <script type="text/javascript" src="js/portfolio.pack.min.js"></script>
   <script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
+  <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
 
  <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css'>
  <link rel="stylesheet" href="jquery.wordrotator.css" />
@@ -61,24 +65,79 @@
 
        <!-- ------------ Section 2 --------- -->
       <section class="page2" id="portfolio">
-        <div class="page_container">
+        <div class="page_container" style="column-count:2;">
           <!-- ----------- Orange Highlighted Section -------------- -->
-          <div class="portfolioContainer">
             <!-- Table for skins-->
-            <div class="skinsTable">
-              <div class="divTableBody">
-                <div class="divTableRow">
-                  <div class="divTableCell">Rank</div>
-                  <div class="divTableCell">Player Name</div>
-                  <div class="divTableCell">Skins</div>
-                </div>
-              </div>
+            <div>
+            <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+              <thead>
+                  <tr>
+                      <th>Rank</th>
+                      <th>Player Name</th>
+                      <th>Total Skins</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>1</td>
+                      <td>Orlando Morriesette</td>
+                      <td>27</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>John Johnson</td>
+                      <td>18</td>
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td>Aurthur Ashe</td>
+                      <td>17</td>
+                  </tr>
+                  <tr>
+                      <td>4</td>
+                      <td>John Johnson</td>
+                      <td>16</td>
+                  </tr>
+              </tbody>
+            </table>
             </div>
             <!-- End skins table -->
             <!-- Table for scoring -->
-            <!--div id="scoring Table">Table for scoring</div -->
+            <div>
+            <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+              <thead>
+                  <tr>
+                      <th>Rank</th>
+                      <th>Player Name</th>
+                      <th>Total Points</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>1</td>
+                      <td>Orlando Morriesette</td>
+                      <td>27</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>John Johnson</td>
+                      <td>18</td>
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td>Aurthur Ashe</td>
+                      <td>17</td>
+                  </tr>
+                  <tr>
+                      <td>4</td>
+                      <td>John Johnson</td>
+                      <td>16</td>
+                  </tr>
+              </tbody>
+            </table>
+            </div>
             <!-- End scoring table-->
-          </div>
+    
         </div>
       </section>
       <!-- -------------------------- End Section 2 ------------------------- -->

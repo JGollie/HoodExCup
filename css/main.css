@@ -165,6 +165,7 @@
       max-width: 100%;
       min-height: 30%;
       z-index: 3;
+      background-color: rgba(87, 139, 72, 0.79);
     }
     .main section.page2 h1 {
       text-align: center;
@@ -191,14 +192,6 @@
     .main section.page2 .portfolioContainer img.skillIcon{
       width: 20%;
     }
-
-    /*.main section.page2 .portfolioContainer img{
-      -webkit-filter: saturate(40%);
-    }
-
-    .main section.page2 .portfolioContainer img:hover{
-      -webkit-filter: saturate(100%);
-    }*/
 
     .main section.page2 .portfolioContainer{
       background-color: rgba(207,109,33,0.9);
