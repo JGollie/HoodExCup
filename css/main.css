@@ -155,8 +155,12 @@
       line-height: 160%;
     }
 
+    /******* All subsections ******/
+    .main section.page2 .page_container, .main section.page3 .page_container
+    {
+      background-color: rgba(87, 139, 72, 0.79);
+    }
     /******* Section 2 ********/
-
     .main section.page2 .page_container
    {
       position: relative;
@@ -165,7 +169,6 @@
       max-width: 100%;
       min-height: 30%;
       z-index: 3;
-      background-color: rgba(87, 139, 72, 0.79);
     }
     .main section.page2 h1 {
       text-align: center;
